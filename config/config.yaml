@@ -1,0 +1,18 @@
+osint_sources:
+  - "https://<TARGET>/osint-feed1"
+  - "https://<TARGET>/osint-feed2"
+
+firewall:
+  host: "localhost"
+  port: 8080
+  api_key: "<API_KEY>"
+
+alerting:
+  email:
+    smtp_server: "smtp.<SMTP_SERVER>"
+    smtp_port: 587
+    username: "admin@<SMTP_SERVER>"
+    password: "<USE_SECRET>"
+    to: "alert_recipient@<SMTP_SERVER>"
+
+# USE SECRETS EVERYWHERE ! Use Vault or .env 
